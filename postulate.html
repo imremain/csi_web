@@ -27,10 +27,10 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">inicio</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="catalog-page.html">Catálogo</a>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="job-opens.html">Bolsa de
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="job-opens.html">Bolsa de
                             trabajo</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active"
-                            href="contact-us.html">Contacto</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contacto</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -60,7 +60,9 @@
                         </div>
                     </div>
                     <hr>
+                    <br>
                     <h3 class="text-center"> Datos Personales</h3>
+                    <br>
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label for="nombre">Nombre</label>
@@ -164,6 +166,382 @@
                             </select>
                         </div>
                     </div>
+                    <hr>
+                    <br>
+                    <h3 class="text-center"> Documentación</h3>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="rfc">Reg. Fed. de Contribuyentes No.</label>
+                            <input class="form-control" id="rfc" name="rfc" type="text" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="no_seguro">Afiliación al Seguro Social No.</label>
+                            <input class="form-control" id="no_seguro" name="no_seguro" type="text" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="curp">CURP</label>
+                            <input class="form-control" id="curp" name="curp" type="text" required>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <h3 class="text-center">Estado de Salud y Hábitos Personales</h3>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="salud">¿Cómo considera su estado de salud actual?</label>
+                            <select class="custom-select mr-sm-2" id="salud" name="salud" required>
+                                <option selected>Seleccione...</option>
+                                <option value="Bueno">Bueno</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Malo">Malo</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="alergias">¿Alergias?</label>
+                            <select class="custom-select mr-sm-2" id="alergias" name="alergias" required>
+                                <option selected>Seleccione...</option>
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="alergias_text">Explique (En caso de tener alergias)</label>
+                            <input class="form-control" id="alergias_text" name="alergias_text" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="fuma">¿Fuma?</label>
+                            <select class="custom-select mr-sm-2" id="fuma" name="fuma" required>
+                                <option selected>Seleccione...</option>
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="toma">¿Toma?</label>
+                            <select class="custom-select mr-sm-2" id="toma" name="toma" required>
+                                <option selected>Seleccione...</option>
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="drogas">¿Problemas con drogas?</label>
+                            <input class="form-control" id="drogas" name="drogas" type="text" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="examen_de_sangre">¿Cuándo fue su último examen de sangre?</label>
+                            <input class="form-control" id="examen_de_sangre" name="examen_de_sangre" type="text"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="padecimientos">Favor de marcar padecimientos</label>
+                            <br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="Diabetis" id="Diabetis"
+                                    value="Diabetis">
+                                <label class="form-check-label" for="Diabetis">Diabetis</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="Colesterol" id="Colesterol"
+                                    value="Colesterol">
+                                <label class="form-check-label" for="Colesterol">Colesterol Alto</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="Hipertension" id="Hipertension"
+                                    value="Hipertension">
+                                <label class="form-check-label" for="Hipertension">Hipertension</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="Epilepsia" id="Epilepsia"
+                                    value="Epilepsia">
+                                <label class="form-check-label" for="Epilepsia">Epilepsia</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="Cirugias" id="Cirugias"
+                                    value="Cirugias">
+                                <label class="form-check-label" for="Cirugias">Cirugias Recientes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="Migrañas" id="Migrañas"
+                                    value="Migrañas">
+                                <label class="form-check-label" for="Migrañas">Migrañas</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" name="Dolores" id="Dolores"
+                                    value="Dolores">
+                                <label class="form-check-label" for="Dolores">Dolores de Espalda o muñecas</label>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="padecimientos">Otro</label>
+                            <input class="form-control" id="padecimientos" name="padecimientos" type="text">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="deporte">¿Practica Ud. algún Deporte?</label>
+                            <input class="form-control" id="deporte" name="deporte" type="text" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="club">¿Pertenece a algún Club Social o Deportivo?</label>
+                            <input class="form-control" id="club" name="club" type="text" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="pasatiempo">¿Cual es su pasatiempo favorito?</label>
+                            <input class="form-control" id="pasatiempo" name="pasatiempo" type="text" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="meta">¿Cuál es su meta en la vida?</label>
+                            <input class="form-control" id="meta" name="meta" type="text" required>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label for="contacto_emergencia">Nombre y numero de telefono de contacto en caso de
+                                emergencia</label>
+                            <input class="form-control" id="contacto_emergencia" name="contacto_emergencia" type="text"
+                                required>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <h3 class="text-center"> Datos Familiares</h3>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="padre">Padre (Nombre)</label>
+                            <input class="form-control" id="padre" name="padre" type="text" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="status_padre">Estado</label>
+                            <select class="custom-select mr-sm-2" id="status_padre" name="status_padre" required>
+                                <option selected>Seleccione...</option>
+                                <option value="Vive">Vive</option>
+                                <option value="Finado">Finado</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="domicilio_padre">Domicilio</label>
+                            <input class="form-control" id="domicilio_padre" name="domicilio_padre" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="ocupacion_padre">Ocupación</label>
+                            <input class="form-control" id="ocupacion_padre" name="ocupacion_padre" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="madre">Madre (Nombre)</label>
+                            <input class="form-control" id="madre" name="madre" type="text" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="status_padre">Estado</label>
+                            <select class="custom-select mr-sm-2" id="status_madre" name="status_madre" required>
+                                <option selected>Seleccione...</option>
+                                <option value="Vive">Vive</option>
+                                <option value="Finado">Finado</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="domicilio_madre">Domicilio</label>
+                            <input class="form-control" id="domicilio_madre" name="domicilio_madre" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="ocupacion_madre">Ocupación</label>
+                            <input class="form-control" id="ocupacion_madre" name="ocupacion_madre" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="conyuge">Conyuge (Nombre)</label>
+                            <input class="form-control" id="conyuge" name="conyuge" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="status_padre">Estado</label>
+                            <select class="custom-select mr-sm-2" id="status_conyuge" name="status_conyuge">
+                                <option selected>Seleccione...</option>
+                                <option value="Vive">Vive</option>
+                                <option value="Finado">Finado</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="domicilio_conyuge">Domicilio</label>
+                            <input class="form-control" id="domicilio_conyuge" name="domicilio_conyuge" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="ocupacion_conyuge">Ocupación</label>
+                            <input class="form-control" id="ocupacion_conyuge" name="ocupacion_conyuge" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="data_hijos">Nombre, edades y ocupación de los hijos</label>
+                            <input class="form-control" id="data_hijos" name="data_hijos" type="text">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="data_hermanos">Nombre, edades y ocupación de los hermanos</label>
+                            <input class="form-control" id="data_hermanos" name="data_hermanos" type="text">
+                        </div>
+                    </div>
+                    <br>
+                    <h3 class="text-center"> Escolaridad</h3>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="primaria">Primaria</label>
+                            <input class="form-control" id="primaria" name="primaria" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="domicilio_primaria">Domicilio</label>
+                            <input class="form-control" id="domicilio_primaria" name="domicilio_primaria" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="inicio_primaria">De</label>
+                            <input class="form-control" id="inicio_primaria" name="inicio_primaria" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="fin_primaria">A</label>
+                            <input class="form-control" id="fin_primaria" name="fin_primaria" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="años_primaria">Años</label>
+                            <input class="form-control" id="años_primaria" name="años_primaria" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="titulo_primaria">Titulo Recibido</label>
+                            <input class="form-control" id="titulo_primaria" name="titulo_primaria" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="secundaria">Secundaria o Prevocacional</label>
+                            <input class="form-control" id="secundaria" name="secundaria" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="domicilio_secundaria">Domicilio</label>
+                            <input class="form-control" id="domicilio_secundaria" name="domicilio_secundaria"
+                                type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="inicio_secundaria">De</label>
+                            <input class="form-control" id="inicio_secundaria" name="inicio_secundaria" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="fin_secundaria">A</label>
+                            <input class="form-control" id="fin_secundaria" name="fin_secundaria" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="años_secundaria">Años</label>
+                            <input class="form-control" id="años_secundaria" name="años_secundaria" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="titulo_secundaria">Titulo Recibido</label>
+                            <input class="form-control" id="titulo_secundaria" name="titulo_secundaria" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="prepa">Preparatoria o Estudios Técnicos</label>
+                            <input class="form-control" id="prepa" name="prepa" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="domicilio_prepa">Domicilio</label>
+                            <input class="form-control" id="domicilio_prepa" name="domicilio_prepa" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="inicio_prepa">De</label>
+                            <input class="form-control" id="inicio_prepa" name="inicio_prepa" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="fin_prepa">A</label>
+                            <input class="form-control" id="fin_prepa" name="fin_prepa" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="años_prepa">Años</label>
+                            <input class="form-control" id="años_prepa" name="años_prepa" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="titulo_prepa">Titulo Recibido</label>
+                            <input class="form-control" id="titulo_prepa" name="titulo_prepa" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="licenciatura">Licenciatura o Ingeniería</label>
+                            <input class="form-control" id="licenciatura" name="licenciatura" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="domicilio_licenciatura">Domicilio</label>
+                            <input class="form-control" id="domicilio_licenciatura" name="domicilio_licenciatura"
+                                type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="inicio_licenciatura">De</label>
+                            <input class="form-control" id="inicio_licenciatura" name="inicio_licenciatura" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="fin_licenciatura">A</label>
+                            <input class="form-control" id="fin_licenciatura" name="fin_licenciatura" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="años_licenciatura">Años</label>
+                            <input class="form-control" id="años_licenciatura" name="años_licenciatura" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="titulo_licenciatura">Titulo Recibido</label>
+                            <input class="form-control" id="titulo_licenciatura" name="titulo_licenciatura" type="text">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="cursos">Cursos Adicionales</label>
+                            <input class="form-control" id="cursos" name="cursos" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="domicilio_cursos">Domicilio</label>
+                            <input class="form-control" id="domicilio_cursos" name="domicilio_cursos" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="inicio_cursos">De</label>
+                            <input class="form-control" id="inicio_cursos" name="inicio_cursos" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="fin_cursos">A</label>
+                            <input class="form-control" id="fin_cursos" name="fin_cursos" type="text">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="años_cursos">Años</label>
+                            <input class="form-control" id="años_cursos" name="años_cursos" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="titulo_cursos">Titulo Recibido</label>
+                            <input class="form-control" id="titulo_cursos" name="titulo_cursos" type="text">
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="text-center"> Estudios que está efectuando en la actualidad</h4>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="escuela_actual">Escuela</label>
+                            <input class="form-control" id="escuela_actual" name="cursos" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="horario_escuela">Horario</label>
+                            <input class="form-control" id="horario_escuela" name="horario_escuela" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="curso_carrera">Curso o Carrera</label>
+                            <input class="form-control" id="curso_carrera" name="curso_carrera" type="text">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="fin_carrera">Cuando termina</label>
+                            <input class="form-control" id="fin_carrera" name="fin_carrera" type="text">
+                        </div>
+                    </div>
+                    <br>
                     <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Enviar</button>
                     </div>
                 </form>
@@ -175,7 +553,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col item social">
-                        <p>Paragraph</p>
+                        <p>Domicilio:</p>
                         <p class="copyright" style="padding-top: 15px;">Grupo CSI © 2020</p>
                     </div>
                     <div class="col-md-4 item social" style="padding-top: 16px;padding-bottom: 16px;"><a href="#"><i
