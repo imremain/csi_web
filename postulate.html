@@ -40,8 +40,8 @@
             <div class="container">
                 <div class="block-heading">
                     <h2 class="text-info" style="font-weight: bold;">Postulación</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in,
-                        mattis vitae leo.</p>
+                    <p>Todos los campos del formulario son requeridos, en caso de no aplicar para alguno de ellos
+                        escriba N/A dentro de ellos.</p>
                 </div>
                 <form action="https://submit-form.com/XyVRVgzI" target="_self">
                     <div class="form-row">
@@ -208,7 +208,7 @@
                         </div>
                         <div class="form-group col-md-5">
                             <label for="alergias_text">Explique (En caso de tener alergias)</label>
-                            <input class="form-control" id="alergias_text" name="alergias_text" type="text">
+                            <input class="form-control" id="alergias_text" name="alergias_text" type="text" required>
                         </div>
                     </div>
                     <div class="form-row">
@@ -280,7 +280,7 @@
                         </div>
                         <div class="form-group col-md-12">
                             <label for="padecimientos">Otro</label>
-                            <input class="form-control" id="padecimientos" name="padecimientos" type="text">
+                            <input class="form-control" id="padecimientos" name="padecimientos" type="text" required>
                         </div>
                         <div class="form-group col-md-4">
                             <label for="deporte">¿Practica Ud. algún Deporte?</label>
@@ -324,11 +324,13 @@
                         </div>
                         <div class="form-group col-md-3">
                             <label for="domicilio_padre">Domicilio</label>
-                            <input class="form-control" id="domicilio_padre" name="domicilio_padre" type="text">
+                            <input class="form-control" id="domicilio_padre" name="domicilio_padre" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="ocupacion_padre">Ocupación</label>
-                            <input class="form-control" id="ocupacion_padre" name="ocupacion_padre" type="text">
+                            <input class="form-control" id="ocupacion_padre" name="ocupacion_padre" type="text"
+                                required>
                         </div>
                     </div>
                     <div class="form-row">
@@ -346,21 +348,23 @@
                         </div>
                         <div class="form-group col-md-3">
                             <label for="domicilio_madre">Domicilio</label>
-                            <input class="form-control" id="domicilio_madre" name="domicilio_madre" type="text">
+                            <input class="form-control" id="domicilio_madre" name="domicilio_madre" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="ocupacion_madre">Ocupación</label>
-                            <input class="form-control" id="ocupacion_madre" name="ocupacion_madre" type="text">
+                            <input class="form-control" id="ocupacion_madre" name="ocupacion_madre" type="text"
+                                required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="conyuge">Conyuge (Nombre)</label>
-                            <input class="form-control" id="conyuge" name="conyuge" type="text">
+                            <input class="form-control" id="conyuge" name="conyuge" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="status_padre">Estado</label>
-                            <select class="custom-select mr-sm-2" id="status_conyuge" name="status_conyuge">
+                            <select class="custom-select mr-sm-2" id="status_conyuge" name="status_conyuge" required>
                                 <option selected>Seleccione...</option>
                                 <option value="Vive">Vive</option>
                                 <option value="Finado">Finado</option>
@@ -368,21 +372,23 @@
                         </div>
                         <div class="form-group col-md-3">
                             <label for="domicilio_conyuge">Domicilio</label>
-                            <input class="form-control" id="domicilio_conyuge" name="domicilio_conyuge" type="text">
+                            <input class="form-control" id="domicilio_conyuge" name="domicilio_conyuge" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="ocupacion_conyuge">Ocupación</label>
-                            <input class="form-control" id="ocupacion_conyuge" name="ocupacion_conyuge" type="text">
+                            <input class="form-control" id="ocupacion_conyuge" name="ocupacion_conyuge" type="text"
+                                required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">
                             <label for="data_hijos">Nombre, edades y ocupación de los hijos</label>
-                            <input class="form-control" id="data_hijos" name="data_hijos" type="text">
+                            <input class="form-control" id="data_hijos" name="data_hijos" type="text" required>
                         </div>
                         <div class="form-group col-md-12">
                             <label for="data_hermanos">Nombre, edades y ocupación de los hermanos</label>
-                            <input class="form-control" id="data_hermanos" name="data_hermanos" type="text">
+                            <input class="form-control" id="data_hermanos" name="data_hermanos" type="text" required>
                         </div>
                     </div>
                     <br>
@@ -391,133 +397,145 @@
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="primaria">Primaria</label>
-                            <input class="form-control" id="primaria" name="primaria" type="text">
+                            <input class="form-control" id="primaria" name="primaria" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="domicilio_primaria">Domicilio</label>
-                            <input class="form-control" id="domicilio_primaria" name="domicilio_primaria" type="text">
+                            <input class="form-control" id="domicilio_primaria" name="domicilio_primaria" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="inicio_primaria">De</label>
-                            <input class="form-control" id="inicio_primaria" name="inicio_primaria" type="text">
+                            <input class="form-control" id="inicio_primaria" name="inicio_primaria" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="fin_primaria">A</label>
-                            <input class="form-control" id="fin_primaria" name="fin_primaria" type="text">
+                            <input class="form-control" id="fin_primaria" name="fin_primaria" type="text" required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="años_primaria">Años</label>
-                            <input class="form-control" id="años_primaria" name="años_primaria" type="text">
+                            <input class="form-control" id="años_primaria" name="años_primaria" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="titulo_primaria">Titulo Recibido</label>
-                            <input class="form-control" id="titulo_primaria" name="titulo_primaria" type="text">
+                            <input class="form-control" id="titulo_primaria" name="titulo_primaria" type="text"
+                                required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="secundaria">Secundaria o Prevocacional</label>
-                            <input class="form-control" id="secundaria" name="secundaria" type="text">
+                            <input class="form-control" id="secundaria" name="secundaria" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="domicilio_secundaria">Domicilio</label>
                             <input class="form-control" id="domicilio_secundaria" name="domicilio_secundaria"
-                                type="text">
+                                type="text" required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="inicio_secundaria">De</label>
-                            <input class="form-control" id="inicio_secundaria" name="inicio_secundaria" type="text">
+                            <input class="form-control" id="inicio_secundaria" name="inicio_secundaria" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="fin_secundaria">A</label>
-                            <input class="form-control" id="fin_secundaria" name="fin_secundaria" type="text">
+                            <input class="form-control" id="fin_secundaria" name="fin_secundaria" type="text" required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="años_secundaria">Años</label>
-                            <input class="form-control" id="años_secundaria" name="años_secundaria" type="text">
+                            <input class="form-control" id="años_secundaria" name="años_secundaria" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="titulo_secundaria">Titulo Recibido</label>
-                            <input class="form-control" id="titulo_secundaria" name="titulo_secundaria" type="text">
+                            <input class="form-control" id="titulo_secundaria" name="titulo_secundaria" type="text"
+                                required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="prepa">Preparatoria o Estudios Técnicos</label>
-                            <input class="form-control" id="prepa" name="prepa" type="text">
+                            <input class="form-control" id="prepa" name="prepa" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="domicilio_prepa">Domicilio</label>
-                            <input class="form-control" id="domicilio_prepa" name="domicilio_prepa" type="text">
+                            <input class="form-control" id="domicilio_prepa" name="domicilio_prepa" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="inicio_prepa">De</label>
-                            <input class="form-control" id="inicio_prepa" name="inicio_prepa" type="text">
+                            <input class="form-control" id="inicio_prepa" name="inicio_prepa" type="text" required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="fin_prepa">A</label>
-                            <input class="form-control" id="fin_prepa" name="fin_prepa" type="text">
+                            <input class="form-control" id="fin_prepa" name="fin_prepa" type="text" required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="años_prepa">Años</label>
-                            <input class="form-control" id="años_prepa" name="años_prepa" type="text">
+                            <input class="form-control" id="años_prepa" name="años_prepa" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="titulo_prepa">Titulo Recibido</label>
-                            <input class="form-control" id="titulo_prepa" name="titulo_prepa" type="text">
+                            <input class="form-control" id="titulo_prepa" name="titulo_prepa" type="text" required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="licenciatura">Licenciatura o Ingeniería</label>
-                            <input class="form-control" id="licenciatura" name="licenciatura" type="text">
+                            <input class="form-control" id="licenciatura" name="licenciatura" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="domicilio_licenciatura">Domicilio</label>
                             <input class="form-control" id="domicilio_licenciatura" name="domicilio_licenciatura"
-                                type="text">
+                                type="text" required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="inicio_licenciatura">De</label>
-                            <input class="form-control" id="inicio_licenciatura" name="inicio_licenciatura" type="text">
+                            <input class="form-control" id="inicio_licenciatura" name="inicio_licenciatura" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="fin_licenciatura">A</label>
-                            <input class="form-control" id="fin_licenciatura" name="fin_licenciatura" type="text">
+                            <input class="form-control" id="fin_licenciatura" name="fin_licenciatura" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="años_licenciatura">Años</label>
-                            <input class="form-control" id="años_licenciatura" name="años_licenciatura" type="text">
+                            <input class="form-control" id="años_licenciatura" name="años_licenciatura" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="titulo_licenciatura">Titulo Recibido</label>
-                            <input class="form-control" id="titulo_licenciatura" name="titulo_licenciatura" type="text">
+                            <input class="form-control" id="titulo_licenciatura" name="titulo_licenciatura" type="text"
+                                required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="cursos">Cursos Adicionales</label>
-                            <input class="form-control" id="cursos" name="cursos" type="text">
+                            <input class="form-control" id="cursos" name="cursos" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="domicilio_cursos">Domicilio</label>
-                            <input class="form-control" id="domicilio_cursos" name="domicilio_cursos" type="text">
+                            <input class="form-control" id="domicilio_cursos" name="domicilio_cursos" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="inicio_cursos">De</label>
-                            <input class="form-control" id="inicio_cursos" name="inicio_cursos" type="text">
+                            <input class="form-control" id="inicio_cursos" name="inicio_cursos" type="text" required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="fin_cursos">A</label>
-                            <input class="form-control" id="fin_cursos" name="fin_cursos" type="text">
+                            <input class="form-control" id="fin_cursos" name="fin_cursos" type="text" required>
                         </div>
                         <div class="form-group col-md-1">
                             <label for="años_cursos">Años</label>
-                            <input class="form-control" id="años_cursos" name="años_cursos" type="text">
+                            <input class="form-control" id="años_cursos" name="años_cursos" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="titulo_cursos">Titulo Recibido</label>
-                            <input class="form-control" id="titulo_cursos" name="titulo_cursos" type="text">
+                            <input class="form-control" id="titulo_cursos" name="titulo_cursos" type="text" required>
                         </div>
                     </div>
                     <br>
@@ -526,19 +544,412 @@
                     <div class="form-row">
                         <div class="form-group col-md-3">
                             <label for="escuela_actual">Escuela</label>
-                            <input class="form-control" id="escuela_actual" name="cursos" type="text">
+                            <input class="form-control" id="escuela_actual" name="escuela_actual" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="horario_escuela">Horario</label>
-                            <input class="form-control" id="horario_escuela" name="horario_escuela" type="text">
+                            <input class="form-control" id="horario_escuela" name="horario_escuela" type="text"
+                                required>
                         </div>
                         <div class="form-group col-md-3">
                             <label for="curso_carrera">Curso o Carrera</label>
-                            <input class="form-control" id="curso_carrera" name="curso_carrera" type="text">
+                            <input class="form-control" id="curso_carrera" name="curso_carrera" type="text" required>
                         </div>
                         <div class="form-group col-md-3">
-                            <label for="fin_carrera">Cuando termina</label>
-                            <input class="form-control" id="fin_carrera" name="fin_carrera" type="text">
+                            <label for="fin_carrera">Cuando Termina</label>
+                            <input class="form-control" id="fin_carrera" name="fin_carrera" type="text" required>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="text-center"> Conocimientos Generales</h4>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nivel_ingles">Nivel de inglés que domina</label>
+                            <input class="form-control" id="nivel_ingles" name="nivel_ingles" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="areas_de_interes">Areas de interés. (Por Ejemplo: Ventas y Cajas)</label>
+                            <input class="form-control" id="areas_de_interes" name="areas_de_interes" type="text"
+                                required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="habilidades_conocimientos">Escriba sus habilidades, conocimientos y
+                                experiencia:</label>
+                            <textarea class="form-control" id="habilidades_conocimientos"
+                                name="habilidades_conocimientos" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="text-center"> Datos de empleo actual</h4>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="empresa_actual">Nombre de la Empresa</label>
+                            <input class="form-control" id="empresa_actual" name="empresa_actual" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cargo_actual">Cargo</label>
+                            <input class="form-control" id="cargo_actual" name="cargo_actual" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="direccion_cargo_actual">Direccion/Ciudad</label>
+                            <input class="form-control" id="direccion_cargo_actual" name="direccion_cargo_actual"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="telefono_cargo_actual">Telefono de la empresa</label>
+                            <input class="form-control" id="telefono_cargo_actual" name="telefono_cargo_actual"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="funciones_cargo_actual">Describa sus fuciones</label>
+                            <input class="form-control" id="funciones_cargo_actual" name="funciones_cargo_actual"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="referencias_cargo_actual">Telefono para referencias
+                            </label>
+                            <input class="form-control" id="referencias_cargo_actual" name="referencias_cargo_actual"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sueldo_inicial_cargo_actual_2">Sueldo Inicial</label>
+                            <input class="form-control" id="sueldo_inicial_cargo_actual"
+                                name="sueldo_inicial_cargo_actual" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sueldo_actual_cargo_actual">Sueldo Actual</label>
+                            <input class="form-control" id="sueldo_actual_cargo_actual"
+                                name="sueldo_actual_cargo_actual" type="text" required>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="text-center"> Datos de empleos anteriores</h4>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="empresa_actual_2">Nombre de la Empresa</label>
+                            <input class="form-control" id="empresa_actual_2" name="empresa_actual_2" type="text"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cargo_actual_2">Cargo</label>
+                            <input class="form-control" id="cargo_actual_2" name="cargo_actual_2" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="direccion_cargo_actual_2">Direccion/Ciudad</label>
+                            <input class="form-control" id="direccion_cargo_actual_2" name="direccion_cargo_actual_2"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="telefono_cargo_actual_2">Telefono de la empresa</label>
+                            <input class="form-control" id="telefono_cargo_actual_2" name="telefono_cargo_actual_2"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="funciones_cargo_actual_2">Describa sus fuciones</label>
+                            <input class="form-control" id="funciones_cargo_actual_2" name="funciones_cargo_actual_2"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="referencias_cargo_actual_2">Telefono para referencias
+                            </label>
+                            <input class="form-control" id="referencias_cargo_actual_2"
+                                name="referencias_cargo_actual_2" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sueldo_inicial_cargo_actual_2">Sueldo Inicial</label>
+                            <input class="form-control" id="sueldo_inicial_cargo_actual_2"
+                                name="sueldo_inicial_cargo_actual_2" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sueldo_actual_cargo_actual_2">Sueldo Actual</label>
+                            <input class="form-control" id="sueldo_actual_cargo_actual_2"
+                                name="sueldo_actual_cargo_actual_2" type="text" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="empresa_actual_3">Nombre de la Empresa</label>
+                            <input class="form-control" id="empresa_actual_3" name="empresa_actual_3" type="text"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cargo_actual_3">Cargo</label>
+                            <input class="form-control" id="cargo_actual_3" name="cargo_actual_3" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="direccion_cargo_actual_3">Direccion/Ciudad</label>
+                            <input class="form-control" id="direccion_cargo_actual_3" name="direccion_cargo_actual_3"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="telefono_cargo_actual_3">Telefono de la empresa</label>
+                            <input class="form-control" id="telefono_cargo_actual_3" name="telefono_cargo_actual_3"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="funciones_cargo_actual_3">Describa sus fuciones</label>
+                            <input class="form-control" id="funciones_cargo_actual_3" name="funciones_cargo_actual_3"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="referencias_cargo_actual_3">Telefono para referencias
+                            </label>
+                            <input class="form-control" id="referencias_cargo_actual_3"
+                                name="referencias_cargo_actual_3" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sueldo_inicial_cargo_actual_3">Sueldo Inicial</label>
+                            <input class="form-control" id="sueldo_inicial_cargo_actual_3"
+                                name="sueldo_inicial_cargo_actual_3" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sueldo_actual_cargo_actual_3">Sueldo Actual</label>
+                            <input class="form-control" id="sueldo_actual_cargo_actual_3"
+                                name="sueldo_actual_cargo_actual_3" type="text" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="empresa_actual_4">Nombre de la Empresa</label>
+                            <input class="form-control" id="empresa_actual_4" name="empresa_actual_4" type="text"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cargo_actual_4">Cargo</label>
+                            <input class="form-control" id="cargo_actual_4" name="cargo_actual_4" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="direccion_cargo_actual_4">Direccion/Ciudad</label>
+                            <input class="form-control" id="direccion_cargo_actual_4" name="direccion_cargo_actual_4"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="telefono_cargo_actual_4">Telefono de la empresa</label>
+                            <input class="form-control" id="telefono_cargo_actual_4" name="telefono_cargo_actual_4"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="funciones_cargo_actual_4">Describa sus fuciones</label>
+                            <input class="form-control" id="funciones_cargo_actual_4" name="funciones_cargo_actual_4"
+                                type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="referencias_cargo_actual_4">Telefono para referencias
+                            </label>
+                            <input class="form-control" id="referencias_cargo_actual_4"
+                                name="referencias_cargo_actual_4" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sueldo_inicial_cargo_actual_4">Sueldo Inicial</label>
+                            <input class="form-control" id="sueldo_inicial_cargo_actual_4"
+                                name="sueldo_inicial_cargo_actual_4" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sueldo_actual_cargo_actual_4">Sueldo Actual</label>
+                            <input class="form-control" id="sueldo_actual_cargo_actual_4"
+                                name="sueldo_actual_cargo_actual_4" type="text" required>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="text-center"> Datos Generales</h4>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="supo_del_empleo">¿ Cómo supo de este empleo ? </label>
+                            <select class="custom-select mr-sm-2" id="supo_del_empleo" name="supo_del_empleo" required>
+                                <option selected>Seleccione...</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Página de Internet">Página de Internet</option>
+                                <option value="Soy cliente">Soy cliente</option>
+                                <option value="Me recomienda un empleado">Me recomienda un empleado</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="visa">¿Cuenta con VISA?</label>
+                            <select class="custom-select mr-sm-2" id="visa" name="visa" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sentri">¿Cuenta con SENTRI?</label>
+                            <select class="custom-select mr-sm-2" id="sentri" name="sentri" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="licencia_chofer">¿Cuenta con licencia de chofer vigente? </label>
+                            <select class="custom-select mr-sm-2" id="licencia_chofer" name="licencia_chofer" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="parientes_empresa">¿ Parientes trabajando o que hayan trabajado en esta Empresa
+                                ?</label>
+                            <select class="custom-select mr-sm-2" id="parientes_empresa" name="parientes_empresa"
+                                required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="nombre_parientes">Nómbrelos</label>
+                            <input class="form-control" id="nombre_parientes" name="nombre_parientes" type="text"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="amigos_empresa">¿ Amigos, conocidos o vecinos trabajando en la Empresa ?</label>
+                            <select class="custom-select mr-sm-2" id="amigos_empresa" name="amigos_empresa" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="nombre_amigos">Nómbrelos</label>
+                            <input class="form-control" id="nombre_amigos" name="nombre_amigos" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="disp_lunes_sabado">¿Cuenta con disponibilidad para laborar de lunes a
+                                sabado?</label>
+                            <select class="custom-select mr-sm-2" id="disp_lunes_sabado" name="disp_lunes_sabado"
+                                required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fecha_para_ingresar">Fecha en que podría presentarse a trabajar
+                            </label>
+                            <input class="form-control" id="fecha_para_ingresar" name="fecha_para_ingresar" type="text"
+                                required>
+                        </div>
+                    </div>
+                    <br>
+                    <h4 class="text-center"> Datos Económicos</h4>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="otros_ingresos">¿ Tiene usted otros ingresos ?</label>
+                            <select class="custom-select mr-sm-2" id="otros_ingresos" name="otros_ingresos" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="otros_ingresos_description">Descríbalos</label>
+                            <input class="form-control" id="otros_ingresos_description"
+                                name="otros_ingresos_description" type="text" placeholder="$1000.00" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="trabaja_conyuge">¿ Su cónyuge trabaja ?</label>
+                            <select class="custom-select mr-sm-2" id="trabaja_conyuge" name="trabaja_conyuge" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="casa_propia">¿ Vive en casa propia ?</label>
+                            <select class="custom-select mr-sm-2" id="casa_propia" name="casa_propia" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="paga_renta">¿ Paga renta ?</label>
+                            <select class="custom-select mr-sm-2" id="paga_renta" name="paga_renta" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="renta_mensual">Renta Mensual</label>
+                            <input class="form-control" id="renta_mensual" name="renta_mensual" type="text"
+                                placeholder="$1000.00" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="auto_propi">¿ Tiene automóvil propio ?</label>
+                            <select class="custom-select mr-sm-2" id="auto_propi" name="auto_propi" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="deudas">¿ Tiene Deudas ?</label>
+                            <select class="custom-select mr-sm-2" id="deudas" name="deudas" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="nombre_deuda">¿ Con quién ?</label>
+                            <input class="form-control" id="nombre_deuda" name="nombre_deuda" type="text" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="importe_deuda">Importe de la deuda</label>
+                            <input class="form-control" id="importe_deuda" name="importe_deuda" type="text"
+                                placeholder="$1000.00" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="usa_infonavit">¿ Esta pagando una casa con su credito INFOFAVIT ? </label>
+                            <select class="custom-select mr-sm-2" id="usa_infonavit" name="usa_infonavit" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="deuda_infonavit">¿ De cuánto es su descuento ? </label>
+                            <input class="form-control" id="deuda_infonavit" name="deuda_infonavit" type="text"
+                                placeholder="$1000.00" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="usa_fonacot">¿ Esta con deuda en FONACOT ? </label>
+                            <select class="custom-select mr-sm-2" id="usa_fonacot" name="usa_fonacot" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="deuda_fonacot">¿ De cuánto es su descuento ? </label>
+                            <input class="form-control" id="deuda_fonacot" name="deuda_fonacot" type="text"
+                                placeholder="$1000.00" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="deudas_banamex">¿ Tienes deudas en los bancos Banamex / Santander?</label>
+                            <select class="custom-select mr-sm-2" id="deudas_banamex" name="deudas_banamex" required>
+                                <option selected>Seleccione...</option>
+                                <option value="No">No</option>
+                                <option value="Sí">Sí</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="gastos_mensuales">¿ A cuánto ascienden sus gastos mensuales ?</label>
+                            <input class="form-control" id="gastos_mensuales" name="gastos_mensuales" type="text"
+                                placeholder="$1000.00" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="tiempo_deseado">¿ Cuanto tiempo desea trabajar en esta empresa ?</label>
+                            <input class="form-control" id="tiempo_deseado" name="tiempo_deseado" type="text" required>
                         </div>
                     </div>
                     <br>
